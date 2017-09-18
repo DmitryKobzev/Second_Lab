@@ -1,7 +1,5 @@
 package com.company;
 import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
 
 public class Matrix {
     int[][] arr;
@@ -17,10 +15,9 @@ public class Matrix {
 
     ////////////
     public void GetMatrix() {
-        Random rand = new Random();
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                arr[i][j] = rand.nextInt(20);
+                arr[i][j]= (int) Math.round((Math.random() * 40) - 13);
                 System.out.print(arr[i][j] + " ");
             }
             System.out.println("");
